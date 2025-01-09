@@ -1,0 +1,155 @@
+/* General Styles */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/1579631/pexels-photo-1579631.jpeg?cs=srgb&dl=pexels-mstudio-360817-1579631.jpg&fm=jpg') center/cover no-repeat;
+    filter: blur(10px);
+    opacity: 0.8; /* Transparency */
+    z-index: -1;
+}
+
+/* General font settings for body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark theme */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Headings use Anton */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Links and other text use Poppins */
+a, p, li {
+    font-family: 'Bangers', sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: fixed;
+    top: 20px; /* Centered at the top */
+    left: 50%; /* Horizontally centered */
+    transform: translateX(-50%); /* Centers horizontally */
+    transition: all 1s ease-in-out; /* Smooth transition */
+}
+
+.scrolled img {
+    top: 20px; /* Stays at the top */
+    left: 20px; /* Moves to the left */
+    transform: translateX(0); /* Reset the transform */
+    width: 100px; /* Shrink the image */
+    height: 100px;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 180px;
+    color: #ffffff; /* White text for header */
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #b0b0b0; /* Light gray for subtitle */
+}
+
+/* Section Styles */
+.about, .experience, .projects, .education, .skills, .links {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #ffffff; /* White for section headers */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li h3 {
+    margin: 0;
+    color: #e0e0e0; /* Light text */
+}
+
+li p {
+    margin: 5px 0;
+    color: #b0b0b0; /* Subtle gray for details */
+}
+
+/* Links Section */
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.links a i {
+    margin-right: 10px;
+    font-size: 24px; /* Icon size */
+    color: #00acee; /* Example: Twitter Blue */
+    transition: color 0.3s;
+}
+
+.links a:hover i {
+    color: #ff9900; /* Change color on hover */
+}
+
+
+.links ul li a:hover {
+    color: #0099ff; /* Darker blue on hover */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333; /* Dark scrollbar thumb */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Slightly lighter track */
+}
